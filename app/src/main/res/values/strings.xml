@@ -33,7 +33,7 @@
     <string name="discard">Discard</string>
     <string name="keep_editing">Keep editing</string>
     <string name="product_name">Iphone 11</string>
-    <string name="product_price">$1,000</string>
+    <string name="product_price">₹0.00</string>
     <string name="product_quantity">0</string>
     <string name="available_stock">Available Stock</string>
 </resources>

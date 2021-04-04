@@ -27,7 +27,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
             android:minHeight="150dp"
-            android:src="@drawable/iphone5" />
+            android:src="@drawable/choose_pic" />
 
         <Button
             android:id="@+id/add_image_btn"
@@ -52,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/product_name_title"
+            android:hint="@string/product_name" />
             android:hint="@string/product_name" />
 
         <TextView
