@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/imgNbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/product_image_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Product Image"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:minHeight="150dp"
+            android:src="@drawable/iphone5" />
+
+        <Button
+            android:id="@+id/add_image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/choose_pics"
+            app:backgroundTint="#FFD600" />
+
+        <TextView
+            android:id="@+id/product_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_image_btn"
+            android:layout_marginTop="10dp"
+            android:text="@string/product_name_title" />
+
+        <EditText
+            android:id="@+id/product_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name_title"
+            android:hint="@string/product_name" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_name_edit_text"
+            android:layout_marginTop="10dp"
+            android:text="@string/price_title" />
+
+        <EditText
+            android:id="@+id/product_price_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_price"
+            android:hint="@string/product_price" />
+
+        <LinearLayout
+            android:id="@+id/incNdec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/product_price_edit_text"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ImageButton
+                android:id="@+id/decrease_quantity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_remove_black_24" />
+
+            <EditText
+                android:id="@+id/quantity_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:hint="@string/product_quantity"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <ImageButton
+                android:id="@+id/increase_quantity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_add_black_24" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/supplier_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/incNdec"
+            android:layout_marginTop="10dp"
+            android:text="@string/supplier_name_title" />
+
+        <EditText
+            android:id="@+id/supplier_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/supplier_name_title"
+            android:hint="@string/supplier_name_hint"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/supplier_phone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/supplier_name_edit_text"
+            android:layout_marginTop="10dp"
+            android:text="@string/supplier_phone_title" />
+
+        <EditText
+            android:id="@+id/supplier_phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/supplier_phone_title"
+            android:hint="@string/supplier_phone_hint"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/supplier_email_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/supplier_phone_edit_text"
+            android:layout_marginTop="10dp"
+            android:text="@string/supplier_email_title" />
+
+        <EditText
+            android:id="@+id/supplier_email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/supplier_email_title"
+            android:hint="@string/supplier_email_title"
+            android:inputType="textEmailAddress" />
+
+    </RelativeLayout>
+
+</ScrollView>
